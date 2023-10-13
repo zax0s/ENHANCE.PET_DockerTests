@@ -11,5 +11,8 @@ RUN python -m pip install orcaz
 
 COPY --chown=user:user moose_test_directory moose_test_directory
 COPY --chown=user:user orca_test_directory orca_test_directory
+COPY --chown=user:user orca_test_directory_bug orca_test_directory_bug
+
+COPY --chown=user:user test_moose_python_package.py test_moose_python_package.py
 
 CMD ["/bin/bash"]
